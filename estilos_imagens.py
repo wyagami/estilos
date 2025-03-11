@@ -43,7 +43,7 @@ tema = st.text_input("Tema do Desenho (ex: um pássaro voando entre nuvens):")
 estilos_selecionados = st.multiselect(
     "Estilos de Imagem:",
     options=estilos_imagem,
-    default=["Pintura"]  # Estilo padrão - MUST be one of the options.
+    default=["Pintura a Oleo"]  # Estilo padrão - MUST be one of the options.
 )
 
 
