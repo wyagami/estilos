@@ -43,7 +43,7 @@ tema = st.text_input("Tema do Desenho (ex: um pássaro voando entre nuvens):")
 estilos_selecionados = st.multiselect(
     "Estilos de Imagem:",
     options=estilos_imagem,
-    default=["Ilustração Editorial"]  # Estilo padrão - MUST be one of the options.
+    default=["Pintura"]  # Estilo padrão - MUST be one of the options.
 )
 
 
@@ -52,7 +52,7 @@ if st.button("Gerar Desenho"):
     # Verifica se a chave de API e o tema foram fornecidos
     if APIK and tema:
         # Constrói o prompt com o tema e estilos selecionados
-        prompt = f"Crie uma imagem em alte resolução. A imagem deve representar {tema}."
+        prompt = f"Crie uma imagem em alta resolução de um(a) {tema}."
 
         # Adiciona os estilos ao prompt
         if estilos_selecionados:
